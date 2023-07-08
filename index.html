@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Desafio do Formulário</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Mentoria</h1>
+    <h2>Preencha o formulário abaixo para agendar a sua mentoria</h2>
+  </header>
+
+  <form>
+
+    <div class="form">
+      <h1 class="paddingBottom16px">informações pessoais</h1>
+
+      <div class="flexRow">
+        <div class="wrapperInput">
+          <label for="nome">Nome</label>
+          <input class="widthRegular" type="text" name="nome" id="nome" required minlength="3">
+        </div>
+        <div class="wrapperInput">
+          <label for="sobreNome">Sobrenome</label>
+          <input class="widthRegular" type="text" name="sobreNome" id="sobreNome">
+        </div>
+      </div>
+      <div class="flexRow">
+        <div class="wrapperInput">
+          <label for="email">Email <span>(digite um email válido)</span> </label>
+          <input class="widthLarge" type="email" name="email" id="email" required>
+        </div>
+      </div>
+      <div class="flexRow">
+        <div class="wrapperInput">
+          <label for="password">Senha <span>(Mínimo de 6 caracteres)</span> </label>
+          <input class="widthLarge" type="password" name="password" id="password" required minlength="6">
+        </div>
+      </div>
+
+      <h1>informações do mentor</h1>
+
+      <div class="flexRow">
+        <div class="wrapperInput">
+          <label for="mentor">Nome do seu mentor <span>(só o primeiro nome)</span> </label>
+          <input class="widthLarge" type="text" name="mentor" id="mentor" required minlength="3">
+        </div>
+      </div>
+
+      <h1>informações do mentor</h1>
+
+      <h3>Primeira Mentoria</h3>
+      <div class="flexRow">
+        <div class="wrapperInput">
+          <label for="firstDate">Data<span> (DD/MM/AAAA)</span> </label>
+          <input class="widthRegular" type="date" name="firstDate" id="firstDate" required>
+        </div>
+        <div class="flexRow gap8px">
+          <div class="wrapperInput">
+            <label for="ofHours">Das</label>
+            <input class="widthSmall" type="time" name="ofHours" id="ofHours" required>
+          </div>
+          <div class="wrapperInput">
+            <label for="untilHours">Até</label>
+            <input class="widthSmall" type="time" name="untilHours" id="untilHours" required>
+          </div>
+        </div>
+      </div>
+
+      <h3>Segunda Mentoria</h3>
+      <div class="flexRow">
+        <div class="wrapperInput">
+          <label for="secondDate">Data<span> (DD/MM/AAAA)</span> </label>
+          <input class="widthRegular" type="date" name="secondDate" id="secondDate" required>
+        </div>
+        <div class="flexRow gap8px">
+          <div class="wrapperInput">
+            <label for="ofHours">Das</label>
+            <input class="widthSmall" type="time" name="ofHours" id="ofHours" required>
+          </div>
+          <div class="wrapperInput">
+            <label for="untilHours">Até</label>
+            <input class="widthSmall" type="time" name="untilHours" id="untilHours" required>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="submit">
+      <button type="submit" class="button">salvar</button>
+    </div>
+  </form>
+
+</body>
+
+</html>
